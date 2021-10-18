@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Taggram</title>
+
+    <!-- O normalize ajuda a reduzir a diferença de estilo entre os navegadores -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="index.js"></script>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="header__container">
+        <img src="imgs/taggram.svg" class="logo" />
+        <div class="current-user">
+          <div class="current-user__username" id="current-user-username"></div>
+          <div class="current-user__avatar" id="current-user-avatar"></div>
+        </div>
+      </div>
+    </header>
+    <div class="main__container">
+      <div class="main-post__image" id="main-post-image"></div>
+      <section class="post-sidebar">
+        <div class="post-owner__information" id="post-owner-information">
+          <div class="post-owner__avatar" id="post-owner-avatar"></div>
+          <div class="post-owner__username" id="post-owner-username"></div>
+          <div class="post-owner__location" id="post-owner-location"></div>
+        </div>
+        <div class="current-post__comments" id="current-post-comments"></div>
+        <div class="post__information" id="post-information">
+          <div class="post__comment-number" id="post-comment-number"></div>
+          <div class="post__date" id="post-date"></div>
+        </div>
+      </section>
+    </div>
+    <div class="other-posts__container" id="other-posts-container">
+      <div class="other-posts__header">Mais publicações</div>
+    </div>
+
+    <footer>
+      <div class="tagview"></div>
+    </footer>
+  </body>
+</html>
